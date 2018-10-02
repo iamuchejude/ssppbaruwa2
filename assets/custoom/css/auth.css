@@ -1,0 +1,135 @@
+* {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box !important;
+  font-size: 16px !important;
+  outline: none; }
+
+.clear::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+a {
+  color: #2f353f !important;
+  text-decoration: none !important; }
+
+.flashdata {
+  padding: 10px;
+  border-radius: 2px;
+  font-size: small !important;
+  cursor: pointer; }
+  .flashdata.error {
+    background: rgba(224, 189, 189, 0.959);
+    color: #b62626;
+    border: 1px solid #f7caca; }
+  .flashdata.success {
+    background: #b9f1f1;
+    color: #026363;
+    border: 1px solid #5cadad; }
+
+html {
+  height: 100vh;
+  width: 100vw;
+  background: #eee;
+  overflow: hidden; }
+  html body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #eee;
+    overflow: hidden; }
+    html body #wrapper {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      padding: 5px;
+      max-height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto; }
+      html body #wrapper header {
+        text-align: center;
+        margin: auto;
+        padding: 10px; }
+        html body #wrapper header .logo {
+          width: 200px; }
+      html body #wrapper.small {
+        width: 320px; }
+        @media only screen and (max-width: 321px) {
+          html body #wrapper.small {
+            width: 95%; } }
+      html body #wrapper.medium {
+        width: 500px; }
+        @media only screen and (max-width: 501px) {
+          html body #wrapper.medium {
+            width: 90%; } }
+        @media only screen and (max-width: 420px) {
+          html body #wrapper.medium {
+            width: 95%; } }
+      html body #wrapper .form_area {
+        background: #fff;
+        border: 1px solid #f3efef;
+        padding: 10px;
+        box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3); }
+        html body #wrapper .form_area .row {
+          margin: 10px 0; }
+          @media only screen and (max-width: 400px) {
+            html body #wrapper .form_area .row {
+              flex-direction: column !important;
+              margin: 0 !important; }
+              html body #wrapper .form_area .row .input-group {
+                width: 100% !important;
+                margin: 0 !important;
+                margin: 5px 0 !important; } }
+          html body #wrapper .form_area .row .input-group label {
+            display: block;
+            margin: 5px 0; }
+          html body #wrapper .form_area .row .input-group input, html body #wrapper .form_area .row .input-group select {
+            display: block;
+            width: 100%;
+            padding: 10px 10px;
+            border: 1px solid #ddd;
+            background: #fff !important; }
+          html body #wrapper .form_area .row.two {
+            display: flex;
+            flex-direction: row; }
+            html body #wrapper .form_area .row.two .input-group {
+              width: 50%;
+              margin-right: 10px; }
+              html body #wrapper .form_area .row.two .input-group:last-child {
+                margin: 0; }
+          html body #wrapper .form_area .row.three {
+            display: flex;
+            flex-direction: row; }
+            html body #wrapper .form_area .row.three .input-group {
+              width: 33%;
+              margin-right: 10px; }
+              html body #wrapper .form_area .row.three .input-group:last-child {
+                margin: 0; }
+        html body #wrapper .form_area button {
+          border: 1px solid #2f353f;
+          background: #2f353f;
+          color: #eee;
+          padding: 8px 20px;
+          margin: 10px 0;
+          cursor: pointer; }
+          html body #wrapper .form_area button.full {
+            width: 100%; }
+
+/*# sourceMappingURL=auth.css.map */

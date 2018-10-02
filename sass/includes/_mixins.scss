@@ -1,0 +1,16 @@
+@mixin middleCenter {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+
+@mixin box-shadow($val, $color) {
+	box-shadow: $val $color;
+	-webkit-box-shadow: $val $color;
+	-moz-box-shadow: $val $color;
+	-o-box-shadow: $val $color;
+}

@@ -1,0 +1,53 @@
+* {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box !important;
+	font-size: 16px !important;
+	outline: none;
+	
+}
+
+.clear::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+a {
+	color: $primary-color !important;
+	text-decoration: none !important;
+}
+
+.flashdata {
+	padding: 10px;
+	border-radius: 2px;
+	font-size: small !important;
+	cursor: pointer;
+
+	&.error {
+		background: rgba(224, 189, 189, 0.959);
+		color: rgb(182, 38, 38);
+		border: 1px solid rgb(247, 202, 202);
+	}
+
+	&.success {
+		background: rgb(185, 241, 241);
+		color: rgb(2, 99, 99);
+		border: 1px solid rgb(92, 173, 173);
+	}
+
+	// &:hover {
+	// 	@include box-shadow(1px 1px 1px, rgba(0, 0, 0, 0.6));
+	// }
+}

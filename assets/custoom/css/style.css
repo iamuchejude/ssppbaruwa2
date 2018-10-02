@@ -1,0 +1,106 @@
+* {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box !important;
+  font-size: 16px !important;
+  outline: none; }
+
+.clear::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+a {
+  color: #2f353f !important;
+  text-decoration: none !important; }
+
+.flashdata {
+  padding: 10px;
+  border-radius: 2px;
+  font-size: small !important;
+  cursor: pointer; }
+  .flashdata.error {
+    background: rgba(224, 189, 189, 0.959);
+    color: #b62626;
+    border: 1px solid #f7caca; }
+  .flashdata.success {
+    background: #b9f1f1;
+    color: #026363;
+    border: 1px solid #5cadad; }
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh; }
+  html body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    html body #wrapper {
+      color: #000; }
+      html body #wrapper .modalArea {
+        padding: 0;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: none;
+        z-index: 5;
+        transition: .5s ease-in-out; }
+        html body #wrapper .modalArea .content {
+          height: 130vh; }
+        html body #wrapper .modalArea.active {
+          display: block; }
+        html body #wrapper .modalArea a.close {
+          position: fixed;
+          top: 0;
+          right: 0;
+          top: 10px;
+          right: 30px;
+          font-size: 2.0em; }
+      html body #wrapper header {
+        width: 100vw;
+        height: 55px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 50px; }
+        html body #wrapper header > div {
+          height: 100%; }
+          html body #wrapper header > div.left {
+            padding: 10px 0; }
+            html body #wrapper header > div.left img {
+              width: 140px; }
+          html body #wrapper header > div.right {
+            padding: 18px 0; }
+            html body #wrapper header > div.right nav {
+              height: 100%; }
+              html body #wrapper header > div.right nav ul li {
+                display: inline-block;
+                padding: 0 20px; }
+                html body #wrapper header > div.right nav ul li:last-child {
+                  padding-right: 0; }
+      html body #wrapper footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        padding: 15px 50px; }
+
+/*# sourceMappingURL=style.css.map */

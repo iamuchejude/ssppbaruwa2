@@ -1,0 +1,138 @@
+@import 'includes/variables',
+		'includes/mixins',
+		'includes/general';
+
+html {
+	height: 100vh;
+	width: 100vw;
+	background: #eee;
+	overflow: hidden;
+
+	body {
+		height: 100vh;
+		width: 100vw;
+		position: relative;
+		background: #eee;	
+		overflow: hidden;	
+
+		#wrapper {
+			position: absolute;
+			@include middleCenter;
+			padding: 5px;
+			max-height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+
+			header {
+				text-align: center;
+				margin: auto;
+				padding: 10px;
+
+				.logo {
+					width: 200px;
+				}
+			}
+
+			&.small {
+				width: 320px;
+
+				@media only screen and (max-width: 321px) {
+					width: 95%;
+				}
+			}
+
+			&.medium {
+				width: 500px;
+
+				@media only screen and (max-width: 501px) {
+					width: 90%;
+				}
+
+
+				@media only screen and (max-width: 420px) {
+					width: 95%;
+				}
+			}
+
+			.form_area {
+				background: #fff;
+				border: 1px solid rgb(243, 239, 239);
+				padding: 10px;
+				@include box-shadow(1px 2px 1px, rgba(0, 0, 0, 0.3));
+
+				.row {
+					margin: 10px 0;
+
+					@media only screen and (max-width: 400px) {
+						flex-direction: column !important;
+						margin: 0 !important;
+
+						.input-group {
+							width: 100% !important;
+							margin: 0 !important;
+							margin: 5px 0 !important;
+						}
+					}
+
+					.input-group {
+						// margin-top: 5px;
+
+						label {
+							display: block;
+							margin: 5px 0;
+						}
+
+						input, select {
+							display: block;
+							width: 100%;
+							padding: 10px 10px;
+							border: 1px solid #ddd;
+							background: #fff !important;
+						}
+					}
+
+					&.two {
+						display: flex;
+						flex-direction: row;
+
+						.input-group {
+							width: 50%;
+							margin-right: 10px;
+
+							&:last-child {
+								margin: 0;
+							}
+						}
+					}
+
+					&.three {
+						display: flex;
+						flex-direction: row;
+
+						.input-group {
+							width: 33%;
+							margin-right: 10px;
+
+							&:last-child {
+								margin: 0;
+							}
+						}
+					}
+				}
+
+				button {
+					border: 1px solid $primary-color;
+					background: $primary-color;
+					color: $secondary-color;
+					padding: 8px 20px;
+					margin: 10px 0;
+					cursor: pointer;
+
+					&.full {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
